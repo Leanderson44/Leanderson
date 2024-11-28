@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página com imagens e informações sobre animais marinhos.">
+    <title>Vida Marinha</title>
+    <style>
+        body::before {
+            content: "";
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%;
+            height: 100%; 
+            background-image: url('IMG/fundo.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
+            background-size: cover; 
+            opacity: 0.1; /* Diminui mais a opacidade da imagem */ 
+            z-index: -1; /* Coloca a imagem atrás do conteúdo */
+        }
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #00796b;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: white;
+            margin: 15px;
+            border-radius: 10px;
+            width: 300px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-bottom: 5px solid #00796b;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #00796b;
+        }
+
+        .card-content p {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-content a:hover {
+            background-color: #004d40;
+        }
+
+        footer {
+            background: #00796b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+        }
+        
+        /* Animações para o texto do cabeçalho */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    Os Magníficos Animais do Oceano 🌊
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="IMG/Baleia.webp" alt="BALEIA">
+        <div class="card-content">
+            <h3>Golfinho</h3>
+            <p>A baleia azul (Balaenoptera musculus) é uma espécie que habita todos os oceanos do mundo, embora esteja ausente de mares específicos, como o Mediterrâneo, o Mar de Okhotsk e o Mar de Bering, como explica a União Internacional para a Conservação da Natureza (IUCN), organização dedicada a proteger o meio ambiente.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="IMG/Tubarão Branco.jpg" alt="Tartaruga Marinha">
+        <div class="card-content">
+            <h3>Tartaruga Marinha</h3>
+            <p>As tartarugas marinhas são animais fascinantes, com grandes viagens migratórias e uma habilidade incrível de navegar por grandes distâncias no oceano.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="IMG/Golfinho.jpg" alt="Peixe Tropical">
+        <div class="card-content">
+            <h3>Peixe Tropical</h3>
+            <p>Os peixes tropicais habitam águas claras e quentes. Com suas cores vibrantes, eles são uma das atrações mais incríveis dos recifes de corais.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="IMG/AGUAVIVA.JPEG" alt="Água-viva">
+        <div class="card-content">
+            <h3>Água-viva</h3>
+            <p>As águas-vivas são criaturas fascinantes e misteriosas do oceano. Elas possuem uma forma gelatinosa e podem ser encontradas em várias profundidades marinhas.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Vida Marinha. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
